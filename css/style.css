@@ -1109,6 +1109,10 @@ body,
   background-image: url("/images/veil-of-vega.png");
 }
 
+.rsvp-hero {
+  background-image: url("/images/kitchen-run.png");
+}
+
 /* =========================================================
    WHEN & WHERE
    ========================================================= */
@@ -2233,12 +2237,8 @@ body,
 }
 
 #faq-page {
-  background-color: #071426;
-  background-image: url("../images/whenwhere-bg.png");
-  background-size: 100% auto;
-  background-position: center top;
-  background-repeat: no-repeat;
-  color: rgba(248,242,230,.78);
+  background: #071426;
+  color: rgba(248, 242, 230, 0.82);
 }
 
 #faq-page,
@@ -2699,164 +2699,13 @@ body,
     padding-bottom: 55px;
   }
 
-
- /* =========================================================
-   MOBILE NAV — FINAL
-   ========================================================= */
-
-@media screen and (max-width: 768px) {
-
-  /* Mobile navigation bar */
-  #fh5co-header-section {
-    position: relative;
-    height: 64px;
-    min-height: 64px;
-    background: #071426;
-  }
-
-  #fh5co-header-section .container,
-  #fh5co-header-section .nav-header {
-    height: 64px;
-    min-height: 64px;
-  }
-
-  /* Hide desktop navigation */
-  #fh5co-menu-wrap {
-    display: none !important;
-  }
-
-  /* Hamburger */
-  .fh5co-nav-toggle {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-
-    width: 44px;
-    height: 44px;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    transform: translateY(-50%);
-    z-index: 10002;
-  }
-
-  .fh5co-nav-toggle i,
-  .fh5co-nav-toggle i::before,
-  .fh5co-nav-toggle i::after {
-    width: 26px;
-    height: 2px;
-    background: #f8f2e6;
-  }
-
-  .fh5co-nav-toggle.active i {
-    background: transparent;
-  }
-
-  /* Off-canvas menu */
-  #offcanvas-menu {
-    display: block !important;
-
-    position: fixed;
-    top: 0;
-    right: -280px;
-    bottom: 0;
-
-    width: 280px;
-    height: 100vh;
-
-    padding: 90px 30px 40px;
-
-    background: #071426;
-    border-left: 1px solid rgba(194,166,121,.25);
-
-    overflow-y: auto;
-
-    z-index: 10000;
-
-    transition: right .35s ease;
-  }
-
-  /* Open state */
-  .fh5co-offcanvas #offcanvas-menu {
-    right: 0;
-  }
-
-  /* IMPORTANT:
-     Don't push the entire website sideways */
-  .fh5co-offcanvas #fh5co-page {
-    transform: none !important;
-  }
-
-  /* Menu list */
-  #offcanvas-menu ul {
-    display: block !important;
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  #offcanvas-menu ul li {
-    display: block !important;
-    float: none !important;
-
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    text-align: left;
-    list-style: none;
-  }
-
-  #offcanvas-menu ul li a {
-    display: block;
-
-    width: 100%;
-    padding: 15px 0 !important;
-
-    border-bottom: 1px solid rgba(194,166,121,.12);
-
-    color: rgba(248,242,230,.82) !important;
-
-    font-family: "Montserrat", sans-serif;
-    font-size: 11px !important;
-    font-weight: 500;
-
-    line-height: 1.5;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-
-    white-space: normal;
-  }
-
-  #offcanvas-menu ul li.active a,
-  #offcanvas-menu ul li a:hover,
-  #offcanvas-menu ul li a:focus {
-    color: #fff6d8 !important;
-  }
-}
-
-
 /* =========================================================
    RSVP PAGE
    ========================================================= */
 
-.rsvp-hero {
-  background-image: url("/images/kitchen-run.png");
-  background-position: center 35%;
-}
-
 #rsvp-page {
-  background-color: #071426;
-  background-image: url("../images/whenwhere-bg.png");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  color: rgba(248,242,230,.78);
+    background: #071426;
+    color: rgba(248, 242, 230, 0.82);
 }
 
 .rsvp-section {
@@ -3001,5 +2850,146 @@ body,
   .rsvp-button {
     width: 100%;
     max-width: 300px;
+  }
+}
+  
+
+ /* =========================================================
+   MOBILE NAV — FINAL
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Mobile navigation bar */
+  #fh5co-header-section {
+    position: relative;
+    height: 64px;
+    min-height: 64px;
+    background: #071426;
+  }
+
+  #fh5co-header-section .container,
+  #fh5co-header-section .nav-header {
+    height: 64px;
+    min-height: 64px;
+  }
+
+  /* Hide desktop navigation */
+  #fh5co-menu-wrap {
+    display: none !important;
+  }
+
+  /* Hamburger */
+  .fh5co-nav-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    width: 44px;
+    height: 44px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translateY(-50%);
+    z-index: 10002;
+  }
+
+  .fh5co-nav-toggle i,
+  .fh5co-nav-toggle i::before,
+  .fh5co-nav-toggle i::after {
+    width: 26px;
+    height: 2px;
+    background: #f8f2e6;
+  }
+
+  .fh5co-nav-toggle.active i {
+    background: transparent;
+  }
+
+  /* Off-canvas menu */
+  #offcanvas-menu {
+    display: block !important;
+
+    position: fixed;
+    top: 0;
+    right: -280px;
+    bottom: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    padding: 90px 30px 40px;
+
+    background: #071426;
+    border-left: 1px solid rgba(194,166,121,.25);
+
+    overflow-y: auto;
+
+    z-index: 10000;
+
+    transition: right .35s ease;
+  }
+
+  /* Open state */
+  .fh5co-offcanvas #offcanvas-menu {
+    right: 0;
+  }
+
+  /* IMPORTANT:
+     Don't push the entire website sideways */
+  .fh5co-offcanvas #fh5co-page {
+    transform: none !important;
+  }
+
+  /* Menu list */
+  #offcanvas-menu ul {
+    display: block !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #offcanvas-menu ul li {
+    display: block !important;
+    float: none !important;
+
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: left;
+    list-style: none;
+  }
+
+  #offcanvas-menu ul li a {
+    display: block;
+
+    width: 100%;
+    padding: 15px 0 !important;
+
+    border-bottom: 1px solid rgba(194,166,121,.12);
+
+    color: rgba(248,242,230,.82) !important;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px !important;
+    font-weight: 500;
+
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    white-space: normal;
+  }
+
+  #offcanvas-menu ul li.active a,
+  #offcanvas-menu ul li a:hover,
+  #offcanvas-menu ul li a:focus {
+    color: #fff6d8 !important;
   }
 }
