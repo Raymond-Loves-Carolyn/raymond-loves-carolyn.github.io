@@ -1119,11 +1119,12 @@ body,
 
 #when-where-page {
   background-color: #071426;
-  background-image: url("../images/registry-bg.png");
+  background-image:
+    linear-gradient(to bottom, rgba(7,20,38,.78), #071426 76%),
+    url("../images/registry-bg.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  color: rgba(248,242,230,.78);
 }
 
 .ww-section {
@@ -2678,11 +2679,12 @@ body,
 
 #rsvp-page {
   background-color: #071426;
-  background-image: url("../images/registry-bg.png");
+  background-image:
+    linear-gradient(to bottom, rgba(7,20,38,.78), #071426 76%),
+    url("../images/registry-bg.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  color: rgba(248,242,230,.78);
 }
 
 .rsvp-section {
