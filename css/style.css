@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -2585,6 +2584,39 @@ body,
 }
 
 /* =========================================================
+   GALLERY — FEATURE PHOTO / COPY STACK FIX
+   ========================================================= */
+#storybook-gallery .storybook-feature {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#storybook-gallery .storybook-feature > figure.storybook-photo.storybook-photo-wide {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#storybook-gallery .storybook-feature > .storybook-feature-copy {
+  width: calc(100% - 40px);
+  max-width: 680px !important;
+  margin: 34px auto !important;
+  padding: 0;
+  text-align: center;
+}
+
+#storybook-gallery .storybook-feature > .storybook-feature-copy p {
+  margin: 0 0 10px !important;
+}
+
+#storybook-gallery .storybook-feature > .storybook-feature-copy p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* =========================================================
    RESPONSIVE / MOBILE RULES
    All responsive rules intentionally live at the end.
    ========================================================= */
@@ -3352,5 +3384,22 @@ body,
 
   #storybook-gallery .storybook-mosaic-large {
     grid-column: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #storybook-gallery .storybook-feature {
+    max-width: 100%;
+  }
+
+  #storybook-gallery .storybook-feature > figure.storybook-photo.storybook-photo-wide {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #storybook-gallery .storybook-feature > .storybook-feature-copy {
+    width: calc(100% - 36px);
+    max-width: 620px !important;
+    margin: 26px auto !important;
   }
 }
