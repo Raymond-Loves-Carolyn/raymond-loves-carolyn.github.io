@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -658,139 +659,9 @@ p {
    RESPONSIVE
    ========================================================= */
 
-@media screen and (max-width: 768px) {
-  .wedding-hero {
-    height: 700px;
-  }
 
-  .wedding-hero-photo {
-    background-size: cover;
-    background-position: center center;
-  }
 
-  .wedding-hero-content {
-    top: 49%;
-  }
 
-  .wedding-hero-content h1 {
-    font-size: 46px;
-  }
-
-  .wedding-hero-content h2 {
-    font-size: 14px;
-    letter-spacing: 7px;
-  }
-
-  .wedding-hero-content p {
-    font-size: 10px;
-    letter-spacing: 4px;
-  }
-
-  .wedding-hero-fade {
-    height: 300px;
-  }
-
-  .celestial-divider {
-    padding: 10px 14px 55px;
-  }
-
-  .celestial-stars {
-    gap: 8px;
-  }
-
-  .celestial-person {
-    gap: 7px;
-  }
-
-  .star-name {
-    font-size: 8px;
-    letter-spacing: 2px;
-  }
-
-  .vega-star { font-size: 29px; }
-  .altair-star { font-size: 25px; }
-
-  .celestial-date {
-    margin-top: 24px;
-    font-size: 9px;
-    letter-spacing: 4px;
-  }
-
-  #fh5co-menu-wrap {
-    display: none;
-  }
-
-  .fh5co-nav-toggle {
-    display: block;
-  }
-
-  #offcanvas-menu {
-    display: block;
-  }
-
-  #fh5co-countdown .countdown {
-    font-size: 30px;
-  }
-
-  #fh5co-countdown .countdown span {
-    margin: 0 7px;
-  }
-
-  #fh5co-couple {
-    padding: 55px 0 65px;
-  }
-
-  .story-intro h2,
-  .colors-title {
-    font-size: 43px;
-  }
-
-  .story-intro h3 {
-    font-size: 9px;
-    letter-spacing: 4px;
-  }
-
-  .heading-section h2,
-  .registry-copy h2 {
-    font-size: 40px;
-  }
-
-  .qr-frame {
-    max-width: 260px;
-    margin: 0 auto;
-  }
-
-  .registry-options > div {
-    margin-bottom: 45px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .wedding-hero {
-    height: 620px;
-  }
-
-  .wedding-hero-content h1 {
-    font-size: 39px;
-  }
-
-  .celestial-bridge {
-    min-width: 45px;
-  }
-
-  .story-intro {
-    padding: 0 12px;
-  }
-
-  .color-circle {
-    width: 62px;
-    height: 62px;
-  }
-
-  .palette {
-    gap: 16px;
-  }
-}
 
 /* =========================================================
    2026 CELESTIAL THEME — FINAL OVERRIDES
@@ -1736,231 +1607,9 @@ body,
    RESPONSIVE — NEW PAGE COMPONENTS
    ========================================================= */
 
-@media screen and (max-width: 768px) {
-  #fh5co-menu-wrap {
-    display: none;
-  }
 
-  .fh5co-nav-toggle {
-    display: block;
-  }
 
-  #offcanvas-menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: -240px;
-    z-index: 9999;
-    display: block;
-    width: 240px;
-    padding: 20px;
-    overflow-y: auto;
-  }
 
-  .subpage-hero {
-    min-height: 500px;
-  }
-
-  .subpage-hero-content h1 {
-    font-size: 54px;
-  }
-
-  .subpage-eyebrow {
-    font-size: 9px;
-    letter-spacing: 5px;
-  }
-
-  .subpage-location {
-    font-size: 10px;
-    letter-spacing: 4px;
-  }
-
-  .subpage-divider {
-    margin: 30px auto 24px;
-  }
-
-  .ww-section {
-    padding: 65px 0;
-  }
-
-  .ww-heading {
-    margin-bottom: 40px;
-    padding: 0 10px;
-  }
-
-  .ww-heading h2,
-  .ww-between-inner h2 {
-    font-size: 40px;
-  }
-
-  .ww-event-row,
-  .ww-hotels {
-    display: block;
-  }
-
-  .ww-event-row > div,
-  .ww-hotels > div {
-    display: block;
-  }
-
-  .ww-event-card,
-  .ww-hotel-card {
-    max-width: 520px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .ww-event-photo {
-    height: 260px;
-  }
-
-  .ww-event-content {
-    padding: 32px 25px 36px;
-  }
-
-  .ww-between {
-    padding: 60px 20px;
-  }
-
-  .ww-airport {
-    display: block;
-    max-width: 520px;
-    padding: 28px;
-    text-align: center;
-  }
-
-  .ww-airport-code {
-    display: block;
-    margin-bottom: 18px;
-  }
-
-  .ww-map {
-    min-height: 300px;
-  }
-
-  .ww-route-summary {
-    padding: 32px 22px 36px;
-  }
-
-  .ww-route-distance {
-    margin-bottom: 30px;
-  }
-
-  .ww-route-journey {
-    display: block;
-  }
-
-  .ww-route-point {
-    width: 100%;
-  }
-
-  .ww-route-connector {
-    width: 150px;
-    margin: 24px auto;
-    transform: rotate(90deg);
-  }
-
-  .ww-route-connector b {
-    transform: rotate(-90deg);
-  }
-
-  .ww-map-action {
-    margin-top: 32px;
-  }
-
-  .ww-map-action .ww-button {
-    min-width: 0;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .registry-section {
-    padding: 65px 0 75px;
-  }
-
-  .registry-intro {
-    margin-bottom: 45px;
-    padding: 0 10px;
-  }
-
-  .registry-intro h2 {
-    font-size: 40px;
-  }
-
-  #registry-page .registry-options {
-    display: block;
-  }
-
-  #registry-page .registry-options > div {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .registry-card {
-    min-height: 0;
-    max-width: 430px;
-    margin: 0 auto;
-    padding: 30px 25px 35px;
-  }
-
-  .registry-qr {
-    width: 210px;
-    height: 210px;
-  }
-
-  #registry-page .registry-cat {
-    width: 250px;
-    height: 210px;
-  }
-
-  #registry-page .registry-cat img {
-    width: 230px;
-  }
-
-  #footer .container {
-    transform: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .subpage-hero {
-    min-height: 440px;
-  }
-
-  .subpage-hero-content h1 {
-    font-size: 46px;
-  }
-
-  .subpage-location {
-    letter-spacing: 3px;
-  }
-
-  .ww-event-content h3 {
-    font-size: 30px;
-  }
-
-  .ww-map {
-    min-height: 230px;
-  }
-
-  .registry-qr {
-    width: 195px;
-    height: 195px;
-  }
-
-  #registry-page .registry-cat {
-    width: 235px;
-    height: 200px;
-  }
-
-  #registry-page .registry-cat img {
-    width: 220px;
-  }
-
-  #footer h2 {
-    font-size: 48px;
-  }
-}
 
 
 /* =========================================================
@@ -2167,75 +1816,13 @@ body,
 }
 
 /* Keep the two family columns visually balanced on desktop. */
-@media screen and (min-width: 992px) {
-    .bp-family-section > .row {
-        display: flex;
-        align-items: flex-start;
-    }
 
-    .bp-family-section > .row > .col-md-6 {
-        float: none;
-    }
-}
 
-@media screen and (max-width: 991px) {
-    .bp-family-section > .row > .col-md-6 + .col-md-6 {
-        margin-top: 45px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    #bridal-party-page {
-        padding: 60px 0 70px;
-    }
 
-    .bp-intro {
-        margin-bottom: 50px;
-        padding: 0 15px;
-    }
 
-    .bp-intro h2 {
-        font-size: 42px;
-    }
 
-    .bp-group-heading h3 {
-        font-size: 34px;
-    }
 
-    .bp-person {
-        max-width: 300px;
-        margin-bottom: 48px;
-    }
-
-    .bp-photo,
-    .bp-family-person .bp-photo {
-        max-width: 250px;
-    }
-
-    .bp-person h4 {
-        font-size: 27px;
-    }
-
-    .bp-section-divider {
-        max-width: 300px;
-        margin: 20px auto 60px;
-    }
-
-    .bp-section-divider span {
-        width: 110px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .bp-photo,
-    .bp-family-person .bp-photo {
-        max-width: 225px;
-    }
-
-    .bp-intro h2 {
-        font-size: 38px;
-    }
-}
 
 #faq-page {
   background: #071426;
@@ -2501,63 +2088,9 @@ body,
     margin-bottom: 28px;
 }
 
-@media screen and (max-width: 768px) {
-    #faq-page { padding: 0; }
-    .faq-section { padding: 65px 0 75px; }
 
-    .faq-intro {
-        margin-bottom: 48px;
-    }
 
-    .faq-intro h2 { font-size: 42px; }
 
-    .faq-group { margin-bottom: 55px; }
-
-    .faq-group-heading h2,
-    .faq-group-heading h3 { font-size: 32px; }
-
-    .faq-question,
-    .faq-question-button,
-    .faq-toggle,
-    #faq-page summary,
-    .faq-section summary {
-        padding: 23px 55px 23px 22px;
-        font-size: 21px;
-    }
-
-    .faq-question,
-    .faq-question-button,
-    .faq-toggle {
-        padding-right: 22px;
-    }
-
-    #faq-page summary::after,
-    .faq-section summary::after { right: 22px; }
-
-    .faq-answer,
-    .faq-content { padding: 0 22px 24px; }
-
-    #faq-page details > *:not(summary),
-    .faq-section details > *:not(summary) {
-        margin-left: 22px;
-        margin-right: 22px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .faq-intro h2 { font-size: 38px; }
-
-    .faq-question,
-    .faq-question-button,
-    .faq-toggle,
-    #faq-page summary,
-    .faq-section summary {
-        font-size: 20px;
-    }
-
-    .faq-note p,
-    .faq-closing p { font-size: 20px; }
-}
 
 /* Tighten spacing between accommodations and directions */
 .ww-travel {
@@ -2616,19 +2149,7 @@ body,
   line-height: 1.8;
 }
 
-@media screen and (max-width: 768px) {
-  .ww-airport {
-    padding: 34px 22px 36px;
-  }
 
-  .ww-airport-code {
-    font-size: 46px;
-  }
-
-  .ww-airport h3 {
-    font-size: 25px;
-  }
-}
 
 /* =========================================================
    BRIDAL PARTY — HOVER PORTRAIT CROSSFADE
@@ -2795,6 +2316,781 @@ body,
   text-transform: uppercase;
 }
 
+
+
+
+
+
+/* =========================================================
+   GALLERY — PHOTO DISPLAY SIZING
+   ========================================================= */
+
+.storybook-photo {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.storybook-photo-wide {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.storybook-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* =========================================================
+   MOBILE VERSION
+   ========================================================= */
+
+
+
+/* =========================================================
+   MOBILE NAV — FINAL
+   ========================================================= */
+
+
+
+/* =========================================================
+   STORYBOOK GALLERY — FINAL OVERRIDES
+   ========================================================= */
+#storybook-gallery {
+  background: #071426;
+  color: rgba(248,242,230,.76);
+}
+
+#storybook-gallery .storybook-opening {
+  padding: 90px 0 65px;
+}
+
+#storybook-gallery .storybook-intro,
+#storybook-gallery .storybook-chapter-heading,
+#storybook-gallery .storybook-feature-copy,
+#storybook-gallery .storybook-centered-copy,
+#storybook-gallery .storybook-copy {
+  text-align: center;
+}
+
+#storybook-gallery .storybook-intro {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+#storybook-gallery .storybook-kicker,
+#storybook-gallery .storybook-chapter-heading > span,
+#storybook-gallery .storybook-transition-small {
+  display: block;
+  margin: 0 0 12px;
+  color: #d8c69d !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#storybook-gallery .storybook-intro h2,
+#storybook-gallery .storybook-chapter-heading h2,
+#storybook-gallery .storybook-transition-inner h2 {
+  margin: 0 !important;
+  color: #f8f2e6 !important;
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  line-height: 1.08 !important;
+}
+
+#storybook-gallery .storybook-intro h2 {
+  font-size: 56px !important;
+  font-style: italic;
+}
+
+#storybook-gallery .storybook-chapter-heading h2 {
+  font-size: 48px !important;
+  font-style: italic;
+}
+
+#storybook-gallery .storybook-intro > p:last-child,
+#storybook-gallery .storybook-copy p,
+#storybook-gallery .storybook-feature-copy p,
+#storybook-gallery .storybook-centered-copy p,
+#storybook-gallery .storybook-transition-inner > p:last-child {
+  color: rgba(248,242,230,.74) !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 1.9 !important;
+}
+
+#storybook-gallery .storybook-intro > p:last-child {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+#storybook-gallery .storybook-divider,
+#storybook-gallery .storybook-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 250px;
+  margin: 22px auto 26px;
+}
+
+#storybook-gallery .storybook-divider span,
+#storybook-gallery .storybook-stars span {
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: rgba(194,166,121,.68);
+}
+
+#storybook-gallery .storybook-divider b,
+#storybook-gallery .storybook-stars b {
+  color: #fff6d8 !important;
+  font-weight: 400;
+}
+
+#storybook-gallery .storybook-chapter {
+  padding: 72px 0 88px;
+}
+
+#storybook-gallery .storybook-chapter-heading {
+  max-width: 850px;
+  margin: 0 auto 36px;
+}
+
+#storybook-gallery .storybook-spread {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#storybook-gallery .storybook-page {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#storybook-gallery figure.storybook-photo {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(194,166,121,.20);
+  background: rgba(24,40,69,.30);
+  box-shadow: 0 16px 45px rgba(0,0,0,.14);
+}
+
+#storybook-gallery figure.storybook-photo-portrait {
+  max-width: 440px;
+}
+
+#storybook-gallery figure.storybook-photo-wide {
+  max-width: 1000px;
+}
+
+#storybook-gallery .storybook-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+#storybook-gallery .storybook-copy {
+  max-width: 440px;
+  margin: 24px auto 0;
+}
+
+#storybook-gallery .storybook-copy p,
+#storybook-gallery .storybook-feature-copy p,
+#storybook-gallery .storybook-centered-copy p {
+  margin: 0 0 8px !important;
+}
+
+#storybook-gallery .storybook-feature {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#storybook-gallery .storybook-feature-copy {
+  max-width: 680px;
+  margin: 26px auto 0;
+}
+
+#storybook-gallery .storybook-centered-copy {
+  max-width: 680px;
+  margin: 30px auto 0;
+}
+
+#storybook-gallery .storybook-transition {
+  padding: 90px 0;
+  border-top: 1px solid rgba(194,166,121,.16);
+  border-bottom: 1px solid rgba(194,166,121,.16);
+  background: rgba(24,40,69,.32);
+}
+
+#storybook-gallery .storybook-transition-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#storybook-gallery .storybook-transition-inner h2 {
+  font-size: 58px !important;
+  font-style: italic;
+}
+
+#storybook-gallery .storybook-transition-inner > p:last-child {
+  max-width: 650px;
+  margin: 22px auto 0;
+}
+
+#storybook-gallery .storybook-mosaic {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#storybook-gallery .storybook-mosaic figure.storybook-photo {
+  max-width: none;
+  margin: 0;
+}
+
+#storybook-gallery .storybook-mosaic-large {
+  grid-row: span 2;
+}
+
+#storybook-gallery .storybook-final {
+  padding-bottom: 110px;
+}
+
+#storybook-gallery .storybook-final-stars {
+  margin-top: 24px;
+  color: #d8c69d !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   RESPONSIVE / MOBILE RULES
+   All responsive rules intentionally live at the end.
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+  .wedding-hero {
+    height: 700px;
+  }
+
+  .wedding-hero-photo {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .wedding-hero-content {
+    top: 49%;
+  }
+
+  .wedding-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .wedding-hero-content h2 {
+    font-size: 14px;
+    letter-spacing: 7px;
+  }
+
+  .wedding-hero-content p {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+
+  .wedding-hero-fade {
+    height: 300px;
+  }
+
+  .celestial-divider {
+    padding: 10px 14px 55px;
+  }
+
+  .celestial-stars {
+    gap: 8px;
+  }
+
+  .celestial-person {
+    gap: 7px;
+  }
+
+  .star-name {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .vega-star { font-size: 29px; }
+  .altair-star { font-size: 25px; }
+
+  .celestial-date {
+    margin-top: 24px;
+    font-size: 9px;
+    letter-spacing: 4px;
+  }
+
+  #fh5co-menu-wrap {
+    display: none;
+  }
+
+  .fh5co-nav-toggle {
+    display: block;
+  }
+
+  #offcanvas-menu {
+    display: block;
+  }
+
+  #fh5co-countdown .countdown {
+    font-size: 30px;
+  }
+
+  #fh5co-countdown .countdown span {
+    margin: 0 7px;
+  }
+
+  #fh5co-couple {
+    padding: 55px 0 65px;
+  }
+
+  .story-intro h2,
+  .colors-title {
+    font-size: 43px;
+  }
+
+  .story-intro h3 {
+    font-size: 9px;
+    letter-spacing: 4px;
+  }
+
+  .heading-section h2,
+  .registry-copy h2 {
+    font-size: 40px;
+  }
+
+  .qr-frame {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .registry-options > div {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wedding-hero {
+    height: 620px;
+  }
+
+  .wedding-hero-content h1 {
+    font-size: 39px;
+  }
+
+  .celestial-bridge {
+    min-width: 45px;
+  }
+
+  .story-intro {
+    padding: 0 12px;
+  }
+
+  .color-circle {
+    width: 62px;
+    height: 62px;
+  }
+
+  .palette {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-menu-wrap {
+    display: none;
+  }
+
+  .fh5co-nav-toggle {
+    display: block;
+  }
+
+  #offcanvas-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -240px;
+    z-index: 9999;
+    display: block;
+    width: 240px;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .subpage-hero {
+    min-height: 500px;
+  }
+
+  .subpage-hero-content h1 {
+    font-size: 54px;
+  }
+
+  .subpage-eyebrow {
+    font-size: 9px;
+    letter-spacing: 5px;
+  }
+
+  .subpage-location {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+
+  .subpage-divider {
+    margin: 30px auto 24px;
+  }
+
+  .ww-section {
+    padding: 65px 0;
+  }
+
+  .ww-heading {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .ww-heading h2,
+  .ww-between-inner h2 {
+    font-size: 40px;
+  }
+
+  .ww-event-row,
+  .ww-hotels {
+    display: block;
+  }
+
+  .ww-event-row > div,
+  .ww-hotels > div {
+    display: block;
+  }
+
+  .ww-event-card,
+  .ww-hotel-card {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ww-event-photo {
+    height: 260px;
+  }
+
+  .ww-event-content {
+    padding: 32px 25px 36px;
+  }
+
+  .ww-between {
+    padding: 60px 20px;
+  }
+
+  .ww-airport {
+    display: block;
+    max-width: 520px;
+    padding: 28px;
+    text-align: center;
+  }
+
+  .ww-airport-code {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .ww-map {
+    min-height: 300px;
+  }
+
+  .ww-route-summary {
+    padding: 32px 22px 36px;
+  }
+
+  .ww-route-distance {
+    margin-bottom: 30px;
+  }
+
+  .ww-route-journey {
+    display: block;
+  }
+
+  .ww-route-point {
+    width: 100%;
+  }
+
+  .ww-route-connector {
+    width: 150px;
+    margin: 24px auto;
+    transform: rotate(90deg);
+  }
+
+  .ww-route-connector b {
+    transform: rotate(-90deg);
+  }
+
+  .ww-map-action {
+    margin-top: 32px;
+  }
+
+  .ww-map-action .ww-button {
+    min-width: 0;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .registry-section {
+    padding: 65px 0 75px;
+  }
+
+  .registry-intro {
+    margin-bottom: 45px;
+    padding: 0 10px;
+  }
+
+  .registry-intro h2 {
+    font-size: 40px;
+  }
+
+  #registry-page .registry-options {
+    display: block;
+  }
+
+  #registry-page .registry-options > div {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .registry-card {
+    min-height: 0;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 30px 25px 35px;
+  }
+
+  .registry-qr {
+    width: 210px;
+    height: 210px;
+  }
+
+  #registry-page .registry-cat {
+    width: 250px;
+    height: 210px;
+  }
+
+  #registry-page .registry-cat img {
+    width: 230px;
+  }
+
+  #footer .container {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subpage-hero {
+    min-height: 440px;
+  }
+
+  .subpage-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .subpage-location {
+    letter-spacing: 3px;
+  }
+
+  .ww-event-content h3 {
+    font-size: 30px;
+  }
+
+  .ww-map {
+    min-height: 230px;
+  }
+
+  .registry-qr {
+    width: 195px;
+    height: 195px;
+  }
+
+  #registry-page .registry-cat {
+    width: 235px;
+    height: 200px;
+  }
+
+  #registry-page .registry-cat img {
+    width: 220px;
+  }
+
+  #footer h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .bp-family-section > .row {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .bp-family-section > .row > .col-md-6 {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bp-family-section > .row > .col-md-6 + .col-md-6 {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #bridal-party-page {
+        padding: 60px 0 70px;
+    }
+
+    .bp-intro {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .bp-intro h2 {
+        font-size: 42px;
+    }
+
+    .bp-group-heading h3 {
+        font-size: 34px;
+    }
+
+    .bp-person {
+        max-width: 300px;
+        margin-bottom: 48px;
+    }
+
+    .bp-photo,
+    .bp-family-person .bp-photo {
+        max-width: 250px;
+    }
+
+    .bp-person h4 {
+        font-size: 27px;
+    }
+
+    .bp-section-divider {
+        max-width: 300px;
+        margin: 20px auto 60px;
+    }
+
+    .bp-section-divider span {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bp-photo,
+    .bp-family-person .bp-photo {
+        max-width: 225px;
+    }
+
+    .bp-intro h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #faq-page { padding: 0; }
+    .faq-section { padding: 65px 0 75px; }
+
+    .faq-intro {
+        margin-bottom: 48px;
+    }
+
+    .faq-intro h2 { font-size: 42px; }
+
+    .faq-group { margin-bottom: 55px; }
+
+    .faq-group-heading h2,
+    .faq-group-heading h3 { font-size: 32px; }
+
+    .faq-question,
+    .faq-question-button,
+    .faq-toggle,
+    #faq-page summary,
+    .faq-section summary {
+        padding: 23px 55px 23px 22px;
+        font-size: 21px;
+    }
+
+    .faq-question,
+    .faq-question-button,
+    .faq-toggle {
+        padding-right: 22px;
+    }
+
+    #faq-page summary::after,
+    .faq-section summary::after { right: 22px; }
+
+    .faq-answer,
+    .faq-content { padding: 0 22px 24px; }
+
+    #faq-page details > *:not(summary),
+    .faq-section details > *:not(summary) {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-intro h2 { font-size: 38px; }
+
+    .faq-question,
+    .faq-question-button,
+    .faq-toggle,
+    #faq-page summary,
+    .faq-section summary {
+        font-size: 20px;
+    }
+
+    .faq-note p,
+    .faq-closing p { font-size: 20px; }
+}
+
+@media screen and (max-width: 768px) {
+  .ww-airport {
+    padding: 34px 22px 36px;
+  }
+
+  .ww-airport-code {
+    font-size: 46px;
+  }
+
+  .ww-airport h3 {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .rsvp-section {
     padding: 65px 0 75px;
@@ -2833,39 +3129,12 @@ body,
   }
 }
 
-
-/* =========================================================
-   GALLERY — PHOTO DISPLAY SIZING
-   ========================================================= */
-
-.storybook-photo {
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.storybook-photo-wide {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.storybook-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (max-width: 768px) {
   .storybook-photo,
   .storybook-photo-wide {
     max-width: 100%;
   }
 }
-
-/* =========================================================
-   MOBILE VERSION
-   ========================================================= */
 
 @media screen and (max-width: 768px) {
 
@@ -2888,10 +3157,7 @@ body,
     padding-top: 55px;
     padding-bottom: 55px;
   }
-
-/* =========================================================
-   MOBILE NAV — FINAL
-   ========================================================= */
+}
 
 @media screen and (max-width: 768px) {
 
@@ -3028,357 +3294,63 @@ body,
     color: #fff6d8 !important;
   }
 }
-```
-
-/* =========================================================
-   STORYBOOK GALLERY — COMPLETE
-   ========================================================= */
-
-#storybook-gallery {
-  background: #071426;
-  color: rgba(248,242,230,.74);
-}
-
-.storybook-opening {
-  padding: 90px 0 70px;
-}
-
-.storybook-intro {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.storybook-kicker,
-.storybook-chapter-heading > span,
-.storybook-transition-small {
-  display: block;
-  margin: 0 0 12px;
-  color: #d8c69d !important;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.storybook-intro h2,
-.storybook-chapter-heading h2,
-.storybook-transition-inner h2 {
-  margin: 0;
-  color: #f8f2e6 !important;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-weight: 400;
-  line-height: 1.08;
-}
-
-.storybook-intro h2 {
-  font-size: 56px;
-  font-style: italic;
-}
-
-.storybook-intro > p:last-child {
-  max-width: 650px;
-  margin: 0 auto;
-  color: rgba(248,242,230,.72) !important;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.storybook-divider,
-.storybook-stars {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  width: 250px;
-  margin: 20px auto 24px;
-}
-
-.storybook-divider span,
-.storybook-stars span {
-  width: 80px;
-  height: 1px;
-  background: rgba(194,166,121,.68);
-}
-
-.storybook-divider b,
-.storybook-stars b {
-  color: #fff6d8;
-  font-weight: 400;
-}
-
-.storybook-chapter {
-  padding: 75px 0 90px;
-}
-
-.storybook-chapter-heading {
-  max-width: 850px;
-  margin: 0 auto 38px;
-  text-align: center;
-}
-
-.storybook-chapter-heading > span {
-  margin-bottom: 9px;
-}
-
-.storybook-chapter-heading h2 {
-  font-size: 48px;
-  font-style: italic;
-}
-
-.storybook-spread {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  margin-left: -18px;
-  margin-right: -18px;
-}
-
-.storybook-spread > div {
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.storybook-page {
-  max-width: 520px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.storybook-photo {
-  max-width: 520px;
-  margin: 0 auto;
-  overflow: hidden;
-  border: 1px solid rgba(194,166,121,.20);
-  background: rgba(24,40,69,.30);
-  box-shadow: 0 16px 45px rgba(0,0,0,.14);
-}
-
-.storybook-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.storybook-photo-portrait {
-  max-width: 440px;
-}
-
-.storybook-copy,
-.storybook-feature-copy,
-.storybook-centered-copy {
-  color: rgba(248,242,230,.72);
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.storybook-copy {
-  max-width: 440px;
-  margin: 24px auto 0;
-  text-align: center;
-}
-
-.storybook-copy p,
-.storybook-feature-copy p,
-.storybook-centered-copy p,
-.storybook-transition-inner > p:last-child {
-  color: rgba(248,242,230,.72) !important;
-}
-
-.storybook-copy p,
-.storybook-feature-copy p,
-.storybook-centered-copy p {
-  margin: 0 0 8px;
-}
-
-.storybook-photo-wide {
-  max-width: 1000px;
-}
-
-.storybook-feature {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.storybook-feature-copy {
-  max-width: 680px;
-  margin: 26px auto 0;
-  text-align: center;
-}
-
-.storybook-centered-copy {
-  max-width: 680px;
-  margin: 30px auto 0;
-  text-align: center;
-}
-
-.storybook-spread-photo-led .storybook-photo {
-  max-width: 520px;
-}
-
-.storybook-transition {
-  padding: 95px 0;
-  border-top: 1px solid rgba(194,166,121,.14);
-  border-bottom: 1px solid rgba(194,166,121,.14);
-  background: rgba(24,40,69,.30);
-}
-
-.storybook-transition-inner {
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.storybook-transition-small {
-  margin-bottom: 14px;
-}
-
-.storybook-transition-inner h2 {
-  font-size: 58px;
-  font-style: italic;
-}
-
-.storybook-transition-inner > p:last-child {
-  max-width: 650px;
-  margin: 22px auto 0;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.storybook-mosaic {
-  display: grid;
-  grid-template-columns: 1.35fr 1fr;
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.storybook-mosaic .storybook-photo {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-}
-
-.storybook-mosaic-large {
-  grid-row: span 2;
-}
-
-.storybook-final {
-  padding-bottom: 110px;
-}
-
-.storybook-final-copy {
-  margin-top: 30px;
-}
-
-.storybook-final-stars {
-  margin-top: 24px;
-  color: #d8c69d;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
 
 @media screen and (max-width: 991px) {
-  .storybook-spread {
+  #storybook-gallery .storybook-spread {
     display: block;
   }
 
-  .storybook-spread > div + div {
+  #storybook-gallery .storybook-spread > div + div {
     margin-top: 38px;
   }
 
-  .storybook-mosaic {
+  #storybook-gallery .storybook-mosaic {
     grid-template-columns: 1fr 1fr;
   }
 
-  .storybook-mosaic-large {
+  #storybook-gallery .storybook-mosaic-large {
     grid-column: 1 / -1;
     grid-row: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .storybook-opening {
+  #storybook-gallery .storybook-opening {
     padding: 65px 0 50px;
   }
 
-  .storybook-chapter {
+  #storybook-gallery .storybook-chapter {
     padding: 55px 0 65px;
   }
 
-  .storybook-intro h2 {
-    font-size: 43px;
+  #storybook-gallery .storybook-intro h2 {
+    font-size: 43px !important;
   }
 
-  .storybook-chapter-heading {
-    margin-bottom: 30px;
+  #storybook-gallery .storybook-chapter-heading h2 {
+    font-size: 39px !important;
   }
 
-  .storybook-chapter-heading h2 {
-    font-size: 39px;
-  }
-
-  .storybook-photo,
-  .storybook-photo-wide,
-  .storybook-photo-portrait,
-  .storybook-spread-photo-led .storybook-photo {
+  #storybook-gallery figure.storybook-photo,
+  #storybook-gallery figure.storybook-photo-portrait,
+  #storybook-gallery figure.storybook-photo-wide {
     max-width: 100%;
   }
 
-  .storybook-transition {
+  #storybook-gallery .storybook-transition {
     padding: 70px 0;
   }
 
-  .storybook-transition-inner {
-    padding: 0 15px;
+  #storybook-gallery .storybook-transition-inner h2 {
+    font-size: 46px !important;
   }
 
-  .storybook-transition-inner h2 {
-    font-size: 46px;
-  }
-
-  .storybook-mosaic {
+  #storybook-gallery .storybook-mosaic {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .storybook-mosaic-large {
+  #storybook-gallery .storybook-mosaic-large {
     grid-column: auto;
-  }
-
-  .storybook-final {
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .storybook-intro h2 {
-    font-size: 38px;
-  }
-
-  .storybook-chapter-heading h2 {
-    font-size: 35px;
-  }
-
-  .storybook-kicker,
-  .storybook-chapter-heading > span,
-  .storybook-transition-small {
-    letter-spacing: 3.5px;
-  }
-
-  .storybook-divider,
-  .storybook-stars {
-    width: 210px;
-  }
-
-  .storybook-divider span,
-  .storybook-stars span {
-    width: 65px;
   }
 }
