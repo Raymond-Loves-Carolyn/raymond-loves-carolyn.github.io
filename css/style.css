@@ -2242,14 +2242,15 @@ body,
   color: rgba(248, 242, 230, 0.82);
 }
 
-#faq-page,
-.faq-section {
-    padding: 90px 0 105px;
+#faq-page {
+    padding: 0;
     color: rgba(248,242,230,.78);
 }
 
 .faq-section {
+    padding: 90px 0 105px;
     background: transparent;
+    color: rgba(248,242,230,.78);
 }
 
 .faq-intro {
@@ -2501,7 +2502,7 @@ body,
 }
 
 @media screen and (max-width: 768px) {
-    #faq-page,
+    #faq-page { padding: 0; }
     .faq-section { padding: 65px 0 75px; }
 
     .faq-intro {
