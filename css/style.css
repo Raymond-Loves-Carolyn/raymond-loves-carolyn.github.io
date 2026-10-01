@@ -2457,12 +2457,12 @@ body,
 }
 
 #storybook-gallery .storybook-chapter {
-  padding: 72px 0 88px;
+  padding: 48px 0 52px;
 }
 
 #storybook-gallery .storybook-chapter-heading {
   max-width: 850px;
-  margin: 0 auto 36px;
+  margin: 0 auto 30px;
 }
 
 #storybook-gallery .storybook-spread {
@@ -2521,12 +2521,12 @@ body,
 
 #storybook-gallery .storybook-feature-copy {
   max-width: 680px;
-  margin: 26px auto 0;
+  margin: 20px auto 0;
 }
 
 #storybook-gallery .storybook-centered-copy {
   max-width: 680px;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
 }
 
 #storybook-gallery .storybook-transition {
@@ -3319,7 +3319,7 @@ body,
   }
 
   #storybook-gallery .storybook-chapter {
-    padding: 55px 0 65px;
+    padding: 40px 0 45px;
   }
 
   #storybook-gallery .storybook-intro h2 {
@@ -3422,7 +3422,7 @@ body,
 }
 
 #storybook-gallery .storybook-feature > .storybook-feature-copy + .storybook-photo {
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 #storybook-gallery .storybook-feature-copy {
