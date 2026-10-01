@@ -3513,7 +3513,7 @@ body,
 ```
 /* =========================================================
    HOMEPAGE — A NOTE FROM US
-   Two real images + selectable HTML text
+   Equal portraits + selectable HTML text
    ========================================================= */
 .home-note-section {
   padding: 95px 0 105px;
@@ -3523,20 +3523,27 @@ body,
 
 .home-note-wrap {
   display: grid;
-  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, 1fr) minmax(380px, .95fr);
   gap: 70px;
   align-items: center;
-  max-width: 1080px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
 .home-note-photos {
-  position: relative;
-  min-height: 590px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
 }
 
-.home-note-photo {
-  position: absolute;
+.home-note-photo,
+.home-note-photo-primary,
+.home-note-photo-secondary {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: 520px;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(194,166,121,.24);
@@ -3549,28 +3556,10 @@ body,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
-.home-note-photo-primary {
-  top: 0;
-  left: 0;
-  width: 76%;
-  height: 470px;
-  z-index: 1;
-}
-
-.home-note-photo-secondary {
-  right: 0;
-  bottom: 0;
-  width: 58%;
-  height: 330px;
-  z-index: 2;
-}
-
-.home-note-copy {
-  max-width: 500px;
-}
-
+.home-note-copy { max-width: 500px; }
 .home-note-eyebrow {
   margin: 0 0 14px;
   color: #d8c69d;
@@ -3580,7 +3569,6 @@ body,
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-
 .home-note-copy h2 {
   margin: 0 0 26px;
   color: #f8f2e6;
@@ -3590,14 +3578,12 @@ body,
   font-style: italic;
   line-height: 1.08;
 }
-
 .home-note-copy > p:not(.home-note-eyebrow):not(.home-note-signature) {
   margin: 0 0 17px;
   color: rgba(248,242,230,.72);
   font-size: 14px;
   line-height: 1.9;
 }
-
 .home-note-signature {
   margin: 30px 0 0;
   color: #f8f2e6;
@@ -3605,7 +3591,6 @@ body,
   font-size: 27px;
   font-style: italic;
 }
-
 .home-note-stars {
   margin-top: 22px;
   color: #d8c69d;
@@ -3617,59 +3602,23 @@ body,
   .home-note-wrap {
     grid-template-columns: 1fr;
     gap: 52px;
-    max-width: 720px;
+    max-width: 760px;
   }
-
-  .home-note-photos {
-    width: min(600px, 100%);
-    min-height: 570px;
-    margin: 0 auto;
-  }
-
-  .home-note-copy {
-    max-width: 620px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  .home-note-photos { width: 100%; margin: 0 auto; }
+  .home-note-photo,
+  .home-note-photo-primary,
+  .home-note-photo-secondary { height: auto; aspect-ratio: 4 / 5; }
+  .home-note-copy { max-width: 620px; margin: 0 auto; text-align: center; }
 }
 
 @media screen and (max-width: 768px) {
-  .home-note-section {
-    padding: 65px 0 75px;
-  }
-
-  .home-note-wrap {
-    gap: 42px;
-  }
-
-  .home-note-photos {
-    min-height: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-
-  .home-note-photo,
-  .home-note-photo-primary,
-  .home-note-photo-secondary {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 5;
-  }
-
-  .home-note-copy h2 {
-    font-size: 40px;
-  }
+  .home-note-section { padding: 65px 0 75px; }
+  .home-note-wrap { gap: 42px; }
+  .home-note-photos { gap: 14px; }
+  .home-note-copy h2 { font-size: 40px; }
 }
 
 @media screen and (max-width: 480px) {
-  .home-note-photos {
-    gap: 10px;
-  }
-
-  .home-note-copy h2 {
-    font-size: 36px;
-  }
+  .home-note-photos { gap: 10px; }
+  .home-note-copy h2 { font-size: 36px; }
 }
