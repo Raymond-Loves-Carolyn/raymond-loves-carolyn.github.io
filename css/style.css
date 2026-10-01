@@ -2584,13 +2584,13 @@ body,
 }
 #storybook-gallery .storybook-ending {
     max-width: 700px;
-    margin: 70px auto 90px;
+    margin: 35px auto 40px;
     text-align: center;
     color: rgba(248,242,230,.78);
 }
 
 #storybook-gallery .storybook-ending-stars {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: #C2A679;
     font-size: 15px;
     letter-spacing: 12px;
@@ -2612,7 +2612,7 @@ body,
     justify-content: center;
     gap: 16px;
     width: 220px;
-    margin: 30px auto 20px;
+    margin: 22px auto 14px;
 }
 
 #storybook-gallery .storybook-ending-rule span:not(.storybook-ending-mark) {
