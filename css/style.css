@@ -3513,7 +3513,7 @@ body,
 ```
 /* =========================================================
    HOMEPAGE — A NOTE FROM US
-   Equal portraits + selectable HTML text
+   Desktop: Ray | Note | Carolyn
    ========================================================= */
 .home-note-section {
   padding: 95px 0 105px;
@@ -3523,25 +3523,15 @@ body,
 
 .home-note-wrap {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(380px, .95fr);
-  gap: 70px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, .9fr) minmax(0, 1fr);
+  gap: 48px;
   align-items: center;
-  max-width: 1240px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
-.home-note-photos {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  align-items: stretch;
-}
-
-.home-note-photo,
-.home-note-photo-primary,
-.home-note-photo-secondary {
+.home-note-wrap > .home-note-photo {
   position: relative;
-  inset: auto;
   width: 100%;
   height: 520px;
   margin: 0;
@@ -3551,7 +3541,7 @@ body,
   box-shadow: 0 20px 55px rgba(0,0,0,.24);
 }
 
-.home-note-photo img {
+.home-note-wrap > .home-note-photo img {
   display: block;
   width: 100%;
   height: 100%;
@@ -3559,7 +3549,12 @@ body,
   object-position: center center;
 }
 
-.home-note-copy { max-width: 500px; }
+.home-note-copy {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
 .home-note-eyebrow {
   margin: 0 0 14px;
   color: #d8c69d;
@@ -3569,21 +3564,24 @@ body,
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+
 .home-note-copy h2 {
   margin: 0 0 26px;
   color: #f8f2e6;
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 400;
   font-style: italic;
   line-height: 1.08;
 }
+
 .home-note-copy > p:not(.home-note-eyebrow):not(.home-note-signature) {
   margin: 0 0 17px;
   color: rgba(248,242,230,.72);
   font-size: 14px;
   line-height: 1.9;
 }
+
 .home-note-signature {
   margin: 30px 0 0;
   color: #f8f2e6;
@@ -3591,6 +3589,7 @@ body,
   font-size: 27px;
   font-style: italic;
 }
+
 .home-note-stars {
   margin-top: 22px;
   color: #d8c69d;
@@ -3601,24 +3600,27 @@ body,
 @media screen and (max-width: 991px) {
   .home-note-wrap {
     grid-template-columns: 1fr;
-    gap: 52px;
-    max-width: 760px;
+    gap: 38px;
+    max-width: 620px;
   }
-  .home-note-photos { width: 100%; margin: 0 auto; }
-  .home-note-photo,
-  .home-note-photo-primary,
-  .home-note-photo-secondary { height: auto; aspect-ratio: 4 / 5; }
-  .home-note-copy { max-width: 620px; margin: 0 auto; text-align: center; }
+
+  .home-note-wrap > .home-note-photo {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .home-note-copy {
+    max-width: 560px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .home-note-section { padding: 65px 0 75px; }
-  .home-note-wrap { gap: 42px; }
-  .home-note-photos { gap: 14px; }
+  .home-note-wrap { gap: 34px; }
   .home-note-copy h2 { font-size: 40px; }
 }
 
 @media screen and (max-width: 480px) {
-  .home-note-photos { gap: 10px; }
   .home-note-copy h2 { font-size: 36px; }
 }
