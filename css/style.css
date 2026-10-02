@@ -3597,6 +3597,7 @@ body,
   color: #d8c69d;
   font-size: 13px;
   letter-spacing: 9px;
+  text-align:center;
 }
 
 @media screen and (max-width: 991px) {
