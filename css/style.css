@@ -3522,9 +3522,19 @@ body,
    Desktop: Ray | Note | Carolyn
    ========================================================= */
 .home-note-section {
-  padding: 95px 0 105px;
-  background: #071426;
-  color: rgba(248,242,230,.78);
+    padding: 105px 0 115px;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(7, 20, 38, .90),
+            rgba(7, 20, 38, .76) 45%,
+            #071426 100%
+        ),
+        url("../images/registry-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(248, 242, 230, .78);
 }
 
 .home-note-wrap {
