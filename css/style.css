@@ -3522,28 +3522,36 @@ body,
    Desktop: Ray | Note | Carolyn
    ========================================================= */
 .home-note-section {
-    padding: 105px 0 115px;
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(7, 20, 38, .90),
-            rgba(7, 20, 38, .76) 45%,
-            #071426 100%
-        ),
-        url("../images/registry-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgba(248, 242, 230, .78);
+  position: relative;
+  padding: 105px 0 115px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7,20,38,.94) 0%,
+      rgba(7,20,38,.76) 42%,
+      rgba(7,20,38,.82) 72%,
+      #071426 100%
+    ),
+    url("../images/registry-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(248,242,230,.78);
+}
+
+.home-note-section > .container {
+  width: 100%;
+  max-width: 1420px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .home-note-wrap {
   display: grid;
-  grid-template-columns: minmax(280px, 350px) minmax(430px, 560px) minmax(280px, 350px);
+  grid-template-columns: minmax(280px,350px) minmax(430px,560px) minmax(280px,350px);
   gap: 58px;
   align-items: center;
   justify-content: center;
-  max-width: 1420px;
   margin: 0 auto;
 }
 
@@ -3613,21 +3621,44 @@ body,
   color: #d8c69d;
   font-size: 13px;
   letter-spacing: 9px;
-  text-align:center;
+  text-align: center;
 }
 
+/* Gentle entrance animation. JS adds .note-visible to the section. */
+.home-note-photo,
+.home-note-copy {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s cubic-bezier(.22,.61,.36,1);
+}
+
+.home-note-photo:first-child { transform: translateX(-22px); }
+.home-note-copy { transform: translateY(18px); }
+.home-note-photo:last-child { transform: translateX(22px); }
+
+.home-note-section.note-visible .home-note-photo,
+.home-note-section.note-visible .home-note-copy {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.home-note-section.note-visible .home-note-copy { transition-delay: .12s; }
+.home-note-section.note-visible .home-note-photo:last-child { transition-delay: .22s; }
+
 @media screen and (max-width: 991px) {
+  .home-note-section > .container {
+    max-width: 670px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .home-note-wrap {
     grid-template-columns: 1fr;
     gap: 38px;
     max-width: 620px;
   }
-
   .home-note-wrap > .home-note-photo {
     height: auto;
     aspect-ratio: 4 / 5;
   }
-
   .home-note-copy {
     max-width: 560px;
     text-align: center;
@@ -3642,4 +3673,13 @@ body,
 
 @media screen and (max-width: 480px) {
   .home-note-copy h2 { font-size: 36px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-note-photo,
+  .home-note-copy {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
