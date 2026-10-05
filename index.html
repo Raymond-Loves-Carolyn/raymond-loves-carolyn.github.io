@@ -136,6 +136,24 @@
     <script src="/js/magnific-popup-options.js"></script>
     <script src="/js/sticky.js"></script>
     <script src="/js/main.js"></script>
-</body>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const note = document.querySelector(".home-note-section");
+        if (!note) return;
+        const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                note.classList.add("note-visible");
+                observer.unobserve(note);
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+    observer.observe(note);
+    });
+    </script>
+
+</body>
 </html>
