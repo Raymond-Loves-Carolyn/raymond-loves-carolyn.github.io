@@ -1,86 +1,61 @@
-(function () {
-    "use strict";
-
+document.addEventListener("DOMContentLoaded", function () {
     var cover = document.getElementById("bookCover");
     var interior = document.getElementById("bookInterior");
     var backCover = document.getElementById("backCover");
-    var openBook = document.getElementById("openBook");
+    var openButton = document.getElementById("openBook");
     var readAgain = document.getElementById("readAgain");
     var prevButton = document.getElementById("prevPage");
     var nextButton = document.getElementById("nextPage");
-    var status = document.getElementById("pageStatus");
-    var leftPage = document.querySelector(".book-page-left");
-    var rightPage = document.querySelector(".book-page-right");
-    var leftImage = document.getElementById("leftPageImage");
-    var rightImage = document.getElementById("rightPageImage");
-    var pageNodes = document.querySelectorAll("#bookPages li");
+    var leftImage = document.getElementById("leftPage");
+    var rightImage = document.getElementById("rightPage");
+    var label = document.getElementById("pageLabel");
+    var pageNodes = document.querySelectorAll("#storybookPages [data-src]");
 
-    if (!cover || !interior || !pageNodes.length) return;
+    if (!cover || !interior || !openButton || !pageNodes.length) return;
 
     var pages = Array.prototype.map.call(pageNodes, function (node) {
         return {
             src: node.getAttribute("data-src"),
-            title: node.getAttribute("data-title") || ""
+            label: node.getAttribute("data-label") || ""
         };
     });
 
-    var desktopIndex = 0;
-    var mobileIndex = 0;
-    var mobileQuery = window.matchMedia("(max-width: 768px)");
-    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var index = 0;
+    var mobile = window.matchMedia("(max-width: 768px)");
 
-    function isMobile() {
-        return mobileQuery.matches;
-    }
-
-    function setImage(pageElement, imageElement, page) {
+    function setPage(img, page) {
+        var holder = img.parentElement;
         if (!page) {
-            imageElement.removeAttribute("src");
-            imageElement.alt = "";
-            pageElement.classList.add("is-empty");
+            img.removeAttribute("src");
+            holder.classList.add("is-empty");
             return;
         }
-
-        imageElement.src = page.src;
-        imageElement.alt = page.title || "";
-        pageElement.classList.remove("is-empty");
-    }
-
-    function renderDesktop() {
-        var left = pages[desktopIndex];
-        var right = pages[desktopIndex + 1];
-
-        setImage(leftPage, leftImage, left);
-        setImage(rightPage, rightImage, right);
-
-        if (left && right && left.title === right.title) {
-            status.textContent = left.title;
-        } else if (left && right) {
-            status.textContent = left.title + " · " + right.title;
-        } else if (left) {
-            status.textContent = left.title;
-        }
-
-        prevButton.textContent = desktopIndex === 0 ? "‹ Cover" : "‹ Previous";
-        nextButton.textContent = desktopIndex + 2 >= pages.length ? "Back Cover ›" : "Next ›";
-    }
-
-    function renderMobile() {
-        var page = pages[mobileIndex];
-
-        setImage(rightPage, rightImage, page);
-        status.textContent = page ? page.title : "";
-
-        prevButton.textContent = mobileIndex === 0 ? "‹ Cover" : "‹ Previous";
-        nextButton.textContent = mobileIndex + 1 >= pages.length ? "Back Cover ›" : "Next ›";
+        img.src = page.src;
+        img.alt = page.label;
+        holder.classList.remove("is-empty");
     }
 
     function render() {
-        if (isMobile()) {
-            renderMobile();
+        if (mobile.matches) {
+            setPage(rightImage, pages[index]);
+            label.textContent = pages[index] ? pages[index].label : "";
+            prevButton.textContent = index === 0 ? "‹ Cover" : "‹ Previous";
+            nextButton.textContent = index >= pages.length - 1 ? "Back Cover ›" : "Next ›";
         } else {
-            renderDesktop();
+            setPage(leftImage, pages[index]);
+            setPage(rightImage, pages[index + 1]);
+            var a = pages[index], b = pages[index + 1];
+            label.textContent = a && b && a.label === b.label ? a.label :
+                [a && a.label, b && b.label].filter(Boolean).join(" · ");
+            prevButton.textContent = index === 0 ? "‹ Cover" : "‹ Previous";
+            nextButton.textContent = index + 2 >= pages.length ? "Back Cover ›" : "Next ›";
         }
+    }
+
+    function showCover() {
+        interior.hidden = true;
+        backCover.hidden = true;
+        cover.hidden = false;
     }
 
     function showInterior() {
@@ -90,84 +65,45 @@
         render();
     }
 
-    function showFrontCover() {
-        interior.hidden = true;
-        backCover.hidden = true;
-        cover.hidden = false;
-    }
-
     function showBackCover() {
-        interior.hidden = true;
         cover.hidden = true;
+        interior.hidden = true;
         backCover.hidden = false;
     }
 
-    openBook.addEventListener("click", function () {
+    openButton.addEventListener("click", function () {
         cover.classList.add("is-opening");
-
+        var delay = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 520;
         window.setTimeout(function () {
             cover.classList.remove("is-opening");
             showInterior();
-        }, reduceMotion.matches ? 0 : 520);
-    });
-
-    readAgain.addEventListener("click", function () {
-        desktopIndex = 0;
-        mobileIndex = 0;
-        showFrontCover();
+        }, delay);
     });
 
     prevButton.addEventListener("click", function () {
-        if (isMobile()) {
-            if (mobileIndex === 0) {
-                showFrontCover();
-                return;
-            }
-            mobileIndex -= 1;
-        } else {
-            if (desktopIndex === 0) {
-                showFrontCover();
-                return;
-            }
-            desktopIndex = Math.max(0, desktopIndex - 2);
-        }
-
+        if (index === 0) return showCover();
+        index = Math.max(0, index - (mobile.matches ? 1 : 2));
         render();
     });
 
     nextButton.addEventListener("click", function () {
-        if (isMobile()) {
-            if (mobileIndex + 1 >= pages.length) {
-                showBackCover();
-                return;
-            }
-            mobileIndex += 1;
-        } else {
-            if (desktopIndex + 2 >= pages.length) {
-                showBackCover();
-                return;
-            }
-            desktopIndex += 2;
-        }
-
+        var step = mobile.matches ? 1 : 2;
+        if (index + step >= pages.length) return showBackCover();
+        index += step;
         render();
     });
 
-    function handleResponsiveChange() {
-        if (isMobile()) {
-            mobileIndex = Math.min(desktopIndex, pages.length - 1);
-        } else {
-            desktopIndex = Math.floor(mobileIndex / 2) * 2;
-        }
+    readAgain.addEventListener("click", function () {
+        index = 0;
+        showCover();
+    });
 
-        if (!interior.hidden) render();
-    }
-
-    if (mobileQuery.addEventListener) {
-        mobileQuery.addEventListener("change", handleResponsiveChange);
-    } else if (mobileQuery.addListener) {
-        mobileQuery.addListener(handleResponsiveChange);
+    if (mobile.addEventListener) {
+        mobile.addEventListener("change", function () {
+            index = mobile.matches ? index : Math.floor(index / 2) * 2;
+            if (!interior.hidden) render();
+        });
     }
 
     render();
-})();
+});
