@@ -4259,3 +4259,65 @@ footer {
     width: calc(100% - 28px);
   }
 }
+
+
+/* =========================================================
+   WHEN & WHERE — BETWEEN EVENTS REFINEMENT
+   ========================================================= */
+
+#when-where-page .ww-between-inner {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+#when-where-page .ww-between-inner .ww-heading-divider {
+  margin-bottom: 34px;
+}
+
+#when-where-page .ww-between-times {
+  margin: 0 auto 26px;
+}
+
+#when-where-page .ww-between-times > div:not(.ww-between-star) {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+
+#when-where-page .ww-between-times span {
+  color: rgba(248,242,230,.78);
+}
+
+#when-where-page .ww-between-times strong {
+  color: #f8f2e6;
+  font-weight: 500;
+}
+
+#when-where-page .ww-between-star {
+  margin: 13px 0;
+  color: #c2a679;
+  opacity: .78;
+}
+
+#when-where-page .ww-between-inner > p:last-child {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: rgba(248,242,230,.78);
+}
+
+@media screen and (max-width: 768px) {
+  #when-where-page .ww-between-inner {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  #when-where-page .ww-between-inner .ww-heading-divider {
+    margin-bottom: 28px;
+  }
+
+  #when-where-page .ww-between-times {
+    margin-bottom: 24px;
+  }
+}
+
