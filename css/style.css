@@ -3975,3 +3975,201 @@ footer {
   }
 }
 
+
+/* =========================================================
+   WHEN & WHERE — CELESTIAL JOURNEY
+   ========================================================= */
+
+#when-where-page .ww-events {
+  position: relative;
+}
+
+#when-where-page .ww-event-card {
+  transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+}
+
+#when-where-page .ww-event-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(194,166,121,.42);
+  box-shadow: 0 22px 54px rgba(0,0,0,.22), 0 0 28px rgba(194,166,121,.07);
+}
+
+#when-where-page .ww-event-photo {
+  position: relative;
+}
+
+#when-where-page .ww-event-star-name {
+  position: absolute;
+  right: 18px;
+  bottom: 15px;
+  z-index: 2;
+  color: rgba(255,246,216,.88);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.65), 0 0 12px rgba(255,246,216,.22);
+}
+
+#when-where-page .ww-between {
+  position: relative;
+  overflow: hidden;
+}
+
+#when-where-page .ww-between::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 19% 31%, rgba(255,246,216,.18) 0 1px, transparent 2px),
+    radial-gradient(circle at 30% 63%, rgba(95,147,228,.18) 0 1px, transparent 2px),
+    radial-gradient(circle at 73% 34%, rgba(255,246,216,.16) 0 1px, transparent 2px),
+    radial-gradient(circle at 83% 67%, rgba(194,166,121,.16) 0 1px, transparent 2px),
+    radial-gradient(ellipse at center, rgba(82,69,102,.13), transparent 62%);
+}
+
+#when-where-page .ww-between-inner {
+  position: relative;
+  z-index: 1;
+}
+
+#when-where-page .ww-celestial-journey {
+  display: grid;
+  grid-template-columns: minmax(130px,1fr) minmax(170px,260px) minmax(130px,1fr);
+  align-items: center;
+  gap: 18px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#when-where-page .ww-between-stop small {
+  display: block;
+  margin-bottom: 8px;
+  color: #d8c69d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+}
+
+#when-where-page .ww-star-bridge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff6d8;
+}
+
+#when-where-page .ww-star-bridge span {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(194,166,121,.58));
+}
+
+#when-where-page .ww-star-bridge span:last-child {
+  transform: scaleX(-1);
+}
+
+#when-where-page .ww-star-bridge i {
+  color: rgba(216,198,157,.65);
+  font-size: 7px;
+  font-style: normal;
+}
+
+#when-where-page .ww-star-bridge b {
+  color: #fff6d8;
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 0 0 14px rgba(255,246,216,.48);
+}
+
+#when-where-page .ww-airport-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+#when-where-page .ww-airport-inner::after {
+  content: "✦";
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  color: rgba(194,166,121,.18);
+  font-size: 46px;
+  line-height: 1;
+}
+
+#when-where-page .ww-hotel-card {
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+
+#when-where-page .ww-hotel-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(194,166,121,.38);
+  box-shadow: 0 16px 38px rgba(0,0,0,.15);
+}
+
+#when-where-page .ww-route-celestial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin: 0 auto 12px;
+  color: rgba(216,198,157,.78);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7px;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+#when-where-page .ww-route-celestial i {
+  display: block;
+  width: 72px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(194,166,121,.18), rgba(194,166,121,.58), rgba(194,166,121,.18));
+}
+
+#when-where-page .ww-route-celestial b {
+  color: #fff6d8;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-shadow: 0 0 10px rgba(255,246,216,.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #when-where-page .ww-event-card,
+  #when-where-page .ww-hotel-card {
+    transition: none;
+  }
+}
+
+/* WHEN & WHERE — MOBILE CELESTIAL JOURNEY */
+@media screen and (max-width: 768px) {
+  #when-where-page .ww-event-card:hover,
+  #when-where-page .ww-hotel-card:hover {
+    transform: none;
+  }
+
+  #when-where-page .ww-celestial-journey {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #when-where-page .ww-star-bridge {
+    width: 180px;
+    margin: 2px auto;
+  }
+
+  #when-where-page .ww-event-star-name {
+    right: 14px;
+    bottom: 12px;
+    font-size: 7px;
+  }
+
+  #when-where-page .ww-route-celestial i {
+    width: 40px;
+  }
+}
+
