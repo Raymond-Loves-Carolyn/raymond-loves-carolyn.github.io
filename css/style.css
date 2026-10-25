@@ -4321,3 +4321,33 @@ footer {
   }
 }
 
+
+/* WHEN & WHERE — MAP DISPLAY REPAIR (no overlay or crop) */
+#when-where-page .ww-map-card { max-width: 1000px; }
+#when-where-page .ww-map {
+  display: block; width: 100%; height: auto; min-height: 0;
+  aspect-ratio: auto; background: none !important;
+}
+#when-where-page .ww-map img {
+  display: block; width: 100%; height: auto; max-width: 100%; object-fit: contain;
+}
+#when-where-page .ww-map-card .ww-route-summary {
+  position: static; inset: auto; left: auto; right: auto;
+  width: 100%; max-width: none; transform: none;
+  margin: 0; padding: 36px 40px 42px;
+  background: rgba(10,25,45,.92); border-top: 1px solid rgba(194,166,121,.24);
+  text-align: center;
+}
+#when-where-page .ww-map-card .ww-map-action {
+  position: static; display: flex; justify-content: center;
+  width: 100%; margin: 30px auto 0;
+}
+#when-where-page .ww-map-card .ww-map-action .ww-button {
+  display: inline-flex; justify-content: center; align-items: center;
+  width: auto; max-width: 100%; margin: 0;
+}
+@media screen and (max-width: 768px) {
+  #when-where-page .ww-map { min-height: 0; }
+  #when-where-page .ww-map-card .ww-route-summary { padding: 28px 18px 34px; }
+  #when-where-page .ww-map-card .ww-map-action .ww-button { width: 100%; max-width: 320px; }
+}
