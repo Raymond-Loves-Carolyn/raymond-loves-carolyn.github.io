@@ -70,3 +70,21 @@
   .book-controls span { font-size:15px; text-align:center; }
 }
 @media screen and (max-width:480px) { .storybook-intro h2 { font-size:36px; } }
+
+#storybook-reader [hidden] {
+    display: none !important;
+}
+
+#backCover {
+    text-align: center;
+}
+
+#backCover .storybook-memories {
+    margin-top: 55px;
+}
+
+#backCover .book-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
