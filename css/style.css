@@ -4351,3 +4351,87 @@ footer {
   #when-where-page .ww-map-card .ww-route-summary { padding: 28px 18px 34px; }
   #when-where-page .ww-map-card .ww-map-action .ww-button { width: 100%; max-width: 320px; }
 }
+/* =========================================================
+   STORYBOOK — OUR MEMORIES
+   ========================================================= */
+
+#storybook-reader .storybook-memories {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 55px auto 30px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+#storybook-reader .storybook-memories-kicker {
+    margin: 0 0 14px;
+    color: #d8c69d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#storybook-reader .storybook-memories h2 {
+    margin: 0 0 18px;
+    color: #f8f2e6;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 46px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+#storybook-reader .storybook-memories p:not(.storybook-memories-kicker) {
+    max-width: 550px;
+    margin: 0 auto 28px;
+    color: rgba(248,242,230,.74);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+#storybook-reader .storybook-memories-link {
+    display: inline-block;
+    padding: 14px 26px;
+    border: 1px solid rgba(194,166,121,.65);
+    background: transparent;
+    color: #f8f2e6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .25s ease,
+                border-color .25s ease,
+                color .25s ease;
+}
+
+#storybook-reader .storybook-memories-link:hover,
+#storybook-reader .storybook-memories-link:focus {
+    background: #d8c69d;
+    border-color: #d8c69d;
+    color: #071426;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    #storybook-reader .storybook-memories {
+        margin: 40px auto 25px;
+        padding: 0 22px;
+    }
+
+    #storybook-reader .storybook-memories h2 {
+        font-size: 38px;
+    }
+
+    #storybook-reader .storybook-memories-link {
+        max-width: 100%;
+        font-size: 9px;
+        line-height: 1.7;
+    }
+}
